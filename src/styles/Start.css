@@ -1,0 +1,34 @@
+body{
+    background-color: #143443;
+    margin-top: 0%;
+  }
+  .text{
+    align-items: center;
+    border: 100px 50px 100px 50px;
+  }
+  
+  .img-cricket {
+    height: 560px;
+    width:390;
+    
+    pointer-events: none;
+    float:left;
+  }
+  
+  #txt1{
+    color:white;
+    font: size 36px;
+    
+  }
+  .but1{
+    background-color: #31708e;
+    color:white;
+    font-size:24;
+    text-align: center;
+    padding:5px 10px 5px 10px;
+    border-radius: 30px;
+  
+  }
+  
+  
+  
