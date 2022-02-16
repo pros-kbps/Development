@@ -8,7 +8,7 @@ function Start() {
     <div className="App">
         <div className="text">
           <p id="txt1">
-             BATSMAN SCORE PREDICTOR
+             BATSMEN SCORE PREDICTOR
           </p>
           <button className="but1" >Get Started</button>  
         </div>
