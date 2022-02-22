@@ -1,24 +1,27 @@
 
+import React from 'react';
+import Navbar from './components/Navbar/Navbar';
+import {Route} from 'react-router-dom';
+import Start from './pages/Start';
+import Home from './pages/HomePage/Home';
+import Prediction from './pages/PredictionPage/Prediction';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div>
+          <Route path ="/Home">
+              <Home/>
+          </Route>
+          <Route path ="/Start">
+              <Start/>
+          </Route>
+          <Route path="/prediction">
+              <Prediction/> 
+          </Route> 
+
+      </div>
+
   );
 }
 
