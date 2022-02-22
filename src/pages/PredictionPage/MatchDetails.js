@@ -1,7 +1,8 @@
 import React from "react";
-import { DetailList } from "../helpers/DetailList";
+
+import { DetailList } from "../../helper/DetailList";
 import DetailItem from "./DetailItem";
-import "../styles/Prediction/MatchDetails.css";
+import "../../styles/MatchDetails.css";
 import { brown } from "@mui/material/colors";
 
 function MatchDetails () {
