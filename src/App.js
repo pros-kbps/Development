@@ -1,11 +1,11 @@
 
 import React from 'react';
-import './App.css';
 import Navbar from './components/Navbar/Navbar';
-import {Route} from 'react-router-dom'
-import Start from './pages/Start'
-import Home from './pages/HomePage/Home'
-import Prediction from './pages/PredictionPage/Prediction'
+import {Route} from 'react-router-dom';
+import Start from './pages/Start';
+import Home from './pages/HomePage/Home';
+import Prediction from './pages/PredictionPage/Prediction';
+import './App.css';
 
 function App() {
   return (

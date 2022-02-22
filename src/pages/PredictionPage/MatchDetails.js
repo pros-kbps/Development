@@ -1,5 +1,4 @@
 import React from "react";
-
 import { DetailList } from "../../helper/DetailList";
 import DetailItem from "./DetailItem";
 import "../../styles/MatchDetails.css";
