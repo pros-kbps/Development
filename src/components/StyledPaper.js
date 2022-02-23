@@ -9,8 +9,8 @@ const StyledPaper = withStyles((theme) => ({
         paddingTop: 50,
         backgroundColor:"#ADD8E6",
         width:'25%',
-
-    }
+        aligncontent: "flex-end"
+}
 }))(Paper);
 
 export default StyledPaper;

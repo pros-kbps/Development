@@ -60,7 +60,7 @@ export default function PredictForm() {
     }
 
     return (
-        
+        <Grid container justify="flex-end">
         <StyledPaper elevation={4}>
         <Form onSubmit={handleSubmit}>
             <Grid container >
@@ -89,7 +89,6 @@ export default function PredictForm() {
                         onChange={handleInputChange}
                         options={team2List}
                     />
-
                     <Button
                             type="submit"
                             text="Submit"
@@ -100,9 +99,10 @@ export default function PredictForm() {
                             color="default"
                             onClick={resetForm} />
 
-                </Grid>
+                    </Grid>
             </Grid>
         </Form>
         </StyledPaper>
+        </Grid>
     )
 }
