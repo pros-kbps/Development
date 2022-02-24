@@ -1,13 +1,13 @@
 import React from "react";
 import MatchDetails from './MatchDetails';
-import Table from "./Table";
+import TabPanel from "./TabPanel";
 
 
 const prediction = () => {
     return (
         <div className="heder">
             <MatchDetails/>
-            <Table/>
+            <TabPanel/>
         </div>
         
 
