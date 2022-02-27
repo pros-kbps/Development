@@ -1,15 +1,16 @@
 import * as React from 'react';
 import PredictForm from './PredictForm'
 import {Grid } from '@material-ui/core';
-import StyledPaper from '../../components/StyledPaper';
 import Container from '@mui/material/Container';
-
+import Header from "../../components/Header/Header"
 
 export default function Home() {
+    
     return (
-    <Container>
+    <div className="header 2">
+        <Header/>
         <PredictForm/>
-    </Container>
+    </div>
 
     );
 }

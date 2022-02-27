@@ -45,7 +45,7 @@ const modelObject = {
     isPermanent: false
 }
 
-export default function Employee() {
+export default function PredictForm() {
 
     const {
         values,
@@ -60,15 +60,15 @@ export default function Employee() {
     }
 
     return (
-        
+        <Grid container justify="flex-end">
         <StyledPaper elevation={4}>
         <Form onSubmit={handleSubmit}>
-            <Grid container>
+            <Grid container >
                 <Grid item xs={12} >
                     <h1>LET'S PREDICT!</h1>
-                    <h3>Enter you values in the correct fields</h3>
+                    <h3>Enter match information to start prediction</h3>
                 </Grid>
-                <Grid item xs={8} >
+                <Grid item xs={12} >
                     <DatePicker
                         name="hireDate"
                         label="Match Date"
@@ -89,20 +89,20 @@ export default function Employee() {
                         onChange={handleInputChange}
                         options={team2List}
                     />
-                    <div>
-                        <Button
+                    <Button
                             type="submit"
                             text="Submit"
                             onClick={handleSubmit}
-                        />
-                        <Button
+                    />
+                    <Button
                             text="Reset"
                             color="default"
                             onClick={resetForm} />
-                    </div>
-                </Grid>
+
+                    </Grid>
             </Grid>
         </Form>
         </StyledPaper>
+        </Grid>
     )
 }
