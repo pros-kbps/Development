@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+ 	<link rel="stylesheet" href="css/Team.css">
+  	<title>League of 11 - Statistics Page</title>
+ 	<link rel="icon" type="image" href="assets/logo.ico">
+  	<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="subContainer">
+		<div class="Container">
+			
+			<div class = "content">
+				<h2>Player Statistics Page </h2>
+			</div>
+			<div class="boxContainer" id="boxContainer">
+				<form class="search-bar" onsubmit="DisplayStatistics()" id="form1">
+					<button type="submit"><i class='bx bx-search'></i></button>
+					<input type="text" placeholder="Search for a Team or a Player..." name="playerName">
+				</form>
+			</div>
+
+		</div>
+				
+				<div class="PlayersContent">
+					<div id ="visible">
+						<button onclick="Boult()"><span class="Players"><table><tr><td class="flag"><img src="assets/Players/New Zealand/trent boult.png"></td><td>&nbsp&nbsp&nbsp Trent Boult (New Zealand)</td></tr></table></span></button>
+						<br>
+						<button onclick="Conway()"><span class="Players"><table><tr><td class="flag"><img src="assets/Players/New Zealand/Devon Conway.png"></td><td>&nbsp&nbsp&nbsp Devon Conway (New Zealand)</td></tr></table></span></button>
+						<br>
+						<button onclick="Grandhomme()"><span class="Players"><table><tr><td class="flag"><img src="assets/Players/New Zealand/Colin de grandomme.png"></td><td>&nbsp&nbsp&nbsp De Grandhomme (New Zealand)</td></tr></table></span></button>
+						<br>
+						<button onclick=" Ferguson()"><span class="Players"><table><tr><td class="flag"><img src="assets/Players/New Zealand/lockie ferguson.png"></td><td>&nbsp&nbsp&nbsp Lockie Ferguson (New Zealand)</td></tr></table></span></button>
+						<br>
+						<button onclick="Guptill()"><span class="Players"><table><tr><td class="flag"><img src="assets/Players/New Zealand/Martin guptil.png"></td><td>&nbsp&nbsp&nbsp Martin Guptill (New Zealand)</td></tr></table></span></button>
+						<br>
+						<button onclick="Latham()"><span class="Players"><table><tr><td class="flag"><img src="assets/Players/New Zealand/tom latham.png"></td><td>&nbsp&nbsp&nbsp Tom Latham (New Zealand)</td></tr></table></span></button>
+						<br>
+						<button onclick="Milne()"><span class="Players"><table><tr><td class="flag"><img src="assets/Players/New Zealand/Adam Milne.png"></td><td>&nbsp&nbsp&nbsp Adam Milne (New Zealand)</td></tr></table></span></button>
+						<br>
+						<button onclick="Neesham()"><span class="Players"><table><tr><td class="flag"><img src="assets/Players/New Zealand/Jimmy neesham.png"></td><td>&nbsp&nbsp&nbsp Jimmy Neesham (New Zealand)</td></tr></table></span></button>
+						<br>
+						<button onclick="Phillips()"><span class="Players"><table><tr><td class="flag"><img src="assets/Players/New Zealand/Glenn Phillips.png"></td><td>&nbsp&nbsp&nbsp Glenn Phillips (New Zealand)</td></tr></table></span></button>
+						<br>
+						<button onclick="Taylor()"><span class="Players"><table><tr><td class="flag"><img src="assets/Players/New Zealand/ross taylor.png"></td><td>&nbsp&nbsp&nbsp Ross Taylor (New Zealand)</td></tr></table></span></button>
+						<br>
+						<button onclick=" Williamson()"><span class="Players"><table><tr><td class="flag"><img src="assets/Players/New Zealand/kane williamson.png"></td><td>&nbsp&nbsp&nbsp Kane Williamson (New Zealand)</td></tr></table></span></button>
+						<br>
+					</div>
+					<div id="table" style="display: none;" class="PlayerTable">
+						<button id="back" onclick="back()" class="backButton"> < &nbsp Back To Players</button>
+						<div id="output1" class="name"></div>
+						<table>
+							<tr>
+								<td class="image" id="image" style="width:20px;height:20px"></td>
+								<td><table>
+									<tr>
+										<td>Matches &nbsp;</td>
+										<td id="output2"></td>
+									</tr>
+									<tr>
+										<td>Innings &nbsp;</td>
+										<td id="output3"></td>
+									</tr>
+									<tr>
+										<td>Not Outs &nbsp;
+										</td><td id="output4"></td>
+									</tr>
+									<tr>
+										<td>Runs &nbsp;</td>
+										<td id="output5"></td>
+									</tr>
+									<tr>
+										<td>Highest Score &nbsp;</td>
+										<td id="output6"></td>
+									</tr>
+									<tr>
+										<td>Average &nbsp;</td>
+										<td id="output7"></td>
+									</tr>
+									<tr>
+										<td>Balls Faced &nbsp;</td>
+										<td id="output8"></td>
+									</tr>
+									<tr>
+										<td>Strike Rate &nbsp;</td>
+										<td id="output9"></td>
+									</tr>
+									<tr>
+										<td>Hundreds &nbsp;</td>
+										<td id="output10"></td>
+									</tr>
+									<tr>
+										<td>Fifties &nbsp;</td>
+										<td id="output11"></td>
+									</tr>
+									<tr>
+										<td>DuckOuts &nbsp;</td>
+										<td id="output12"></td>
+									</tr>
+									<tr>
+										<td>Fours &nbsp;</td>
+										<td id="output13"></td>
+									</tr>
+									<tr>
+										<td>Sixes &nbsp;</td>
+										<td id="output14"></td>
+									</tr>
+								</table></td>
+								
+							</tr>
+						</table>
+						<div class="Bio">
+							<div class="profile"><b>PROFILE</b></div>
+							<div id="output15"></div>
+						</div>
+					</div>
+				</div>
+					
+			
+	</div>
+
+	
+	<script src="js/New Zealand.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;	
+}
+
+.subContainer{
+	box-sizing: border-box;
+	width: 100%;
+	min-height: 100vh;
+	background: url(bg.jpg);
+	background-size: cover;
+	
+}
+
+.Container{
+	width: 70%;
+	background-color: white;
+	margin:auto;
+	opacity: 0.7;
+}
+
+
+h2{
+	font-size: 60px;
+	color: #000;
+	font-weight: 500;
+	padding-top:2%;
+	padding-bottom:2%;
+	text-align: center;
+}
+
+p{
+	font-weight:300;
+	color: #000;
+	text-align: center;
+	padding-bottom:2%;
+}	
+
+.PlayersContent {
+	text-decoration: none;
+	color:black;
+	font-size:20px;
+	background-color: white;
+	width: 70%;
+	margin:auto;
+}
+
+.PlayersContent button{
+	color:black;
+	border-left:none;
+	border-right:none;
+	border-bottom:none;
+	border-top-color: black;
+	background-color:rgb(255, 255, 255);
+	font-size:20px;
+	padding-top:1%;
+	padding-bottom:1%;
+	padding-left:2%;
+	width:100%;
+	text-align: left;
+	-webkit-transition: color 1ms;
+    transition: color 1ms;
+	
+}
+
+.PlayersContent button:hover{
+	color:  #a6a6a6;
+}
+
+img{
+	width:50px;
+	height:50px;
+}
+
+.image img{
+	width:420px;
+	height:420px;
+}
+
+.name{
+	font-size:35px;
+	padding-top:30px;
+	padding-left:20px;
+	font-family: "ALGERIAN";
+}
+
+.PlayerTable table{
+	margin-left:20px;
+	padding-top:10px;
+}
+
+.PlayerTable td{
+	padding-right:20px;
+}
+
+.Bio{
+	margin-left:20px;
+	padding-top:15px;
+	padding-bottom:15px;
+}
+
+.profile{
+	font-size:25px;
+}
+
+
+
+a:hover {
+	background-color: rgba(144, 240, 200, 0.534);
+	color:rgb(0, 0, 0);
+}
+
+.boxContainer{
+	width: 100%;
+	min-height: 15vh;
+	padding-left: 2%;
+	padding-right: 2%;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.search-bar{
+	width: 100%;
+	height: 50px;
+	max-width: 1000px;
+	background: #c7c8d4;
+	display: flex;
+	align-items: center;
+	border-radius: 60px;
+	padding: 10px 20px;
+	backdrop-filter: blur(4px) saturate(200%);
+}
+
+	.search-bar input{
+		background: transparent;
+		flex: 1;
+		border: 0;
+		outline: none;
+		padding: 24px 20px;
+		font-size: 20px;
+		color: #4863A0;
+	}
+	::placeholder{
+		color: #151B54;
+	}
+	.search-bar button i{
+		font-size: 30px;
+		color: #151B54;
+	}
+
+	.search-bar button{
+		border: 0;
+		width: 0px;
+		height: 50px;
+		margin-top: 2px;
+		margin-right: 20px;
+		cursor: pointer;
+	}
+
+
+	/* width */
+::-webkit-scrollbar {
+	width: 15px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+	background: #f1f1f1;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+	background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+	background: #555; 
+  }
